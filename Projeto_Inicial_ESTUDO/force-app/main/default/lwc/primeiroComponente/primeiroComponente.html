@@ -1,5 +1,123 @@
 <template>
-  testeGleison   
-  hoje
-  
+    <lightning-card>
+        
+        <div slot="title" class="slds-media slds-media_center slds-var-p-vertical_small">
+            <div class="slds-media__figure">
+                <span class="slds-avatar slds-avatar_large slds-icon-standard-store" style="background-color: #0176D3; padding: 6px; border-radius: 8px;">
+                    <lightning-icon icon-name="standard:store" alternative-text="Loja Icon" variant="inverse"></lightning-icon>
+                </span>
+            </div>
+            <div class="slds-media__body">
+                <h1 class="slds-text-heading_large slds-font-weight_bold" style="letter-spacing: 1px;">
+                    <span style="color: #0176D3;">Irmãos</span> 
+                    <span style="color: #EA001E; margin-left: 6px;">ANDRADE</span> 
+                    <span style="color: #2E2E2E; font-weight: 300; font-size: 1.5rem; margin-left: 10px;">| Tech Store</span>
+                </h1>
+            </div>
+        </div>
+        
+        <div slot="actions">
+            <span class="slds-badge slds-theme_success" style="font-weight: bold; padding: 6px 12px;">
+                👥 Founders: Gleison & Weslei
+            </span>
+        </div>
+
+        <div class="slds-var-m-around_medium">
+            
+            <div class="slds-box slds-theme_shade slds-var-m-bottom_medium slds-theme_alert-texture">
+                <div class="slds-media slds-media_center">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="utility:desktop" size="medium" alternative-text="Tech Store"></lightning-icon>
+                    </div>
+                    <div class="slds-media__body">
+                        <h2 class="slds-text-heading_small slds-font-weight_bold">
+                            Bem-vindo à nossa Loja Fictícia!
+                        </h2>
+                        <p class="slds-text-color_weak slds-text-body_small">
+                            Ambiente de Desenvolvimento & Treinamento administrado por <strong>Gleison Andrade</strong> e <strong>Weslei Andrade</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="slds-text-heading_small slds-var-m-bottom_small slds-font-weight_bold">🖥️ Produtos em Destaque</h4>
+            
+            <div class="slds-grid slds-gutters slds-wrap slds-var-m-bottom_large">
+                
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-var-m-bottom_small">
+                    <div class="slds-box slds-theme_default slds-text-align_center">
+                        <div class="slds-var-m-bottom_small slds-align_absolute-center" style="height:120px; background-color:#f3f3f3; border-radius:4px;">
+                            <lightning-icon icon-name="utility:desktop" size="large" variant="error"></lightning-icon>
+                        </div>
+                        <h3 class="slds-text-title_bold slds-text-color_error">Notebook Gamer RTX</h3>
+                        <p class="slds-var-m-top_xx-small">R$ 5.500,00</p>
+                        <p class="slds-text-color_weak slds-text-body_small">Estoque: 8 un</p>
+                    </div>
+                </div>
+
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-var-m-bottom_small">
+                    <div class="slds-box slds-theme_default slds-text-align_center">
+                        <div class="slds-var-m-bottom_small slds-align_absolute-center" style="height:120px; background-color:#f3f3f3; border-radius:4px;">
+                            <lightning-icon icon-name="utility:screen" size="large" variant="error"></lightning-icon>
+                        </div>
+                        <h3 class="slds-text-title_bold slds-text-color_error">Monitor UltraWide 34'</h3>
+                        <p class="slds-var-m-top_xx-small">R$ 2.800,00</p>
+                        <p class="slds-text-color_weak slds-text-body_small">Estoque: 5 un</p>
+                    </div>
+                </div>
+
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-var-m-bottom_small">
+                    <div class="slds-box slds-theme_default slds-text-align_center">
+                        <div class="slds-var-m-bottom_small slds-align_absolute-center" style="height:120px; background-color:#f3f3f3; border-radius:4px;">
+                            <lightning-icon icon-name="utility:setup" size="large" variant="error"></lightning-icon>
+                        </div>
+                        <h3 class="slds-text-title_bold slds-text-color_error">Teclado Mecânico RGB</h3>
+                        <p class="slds-var-m-top_xx-small">R$ 450,00</p>
+                        <p class="slds-text-color_weak slds-text-body_small">Estoque: 15 un</p>
+                    </div>
+                </div>
+
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-var-m-bottom_small">
+                    <div class="slds-box slds-theme_default slds-text-align_center">
+                        <div class="slds-var-m-bottom_small slds-align_absolute-center" style="height:120px; background-color:#f3f3f3; border-radius:4px;">
+                            <lightning-icon icon-name="utility:touch_action" size="large" variant="error"></lightning-icon>
+                        </div>
+                        <h3 class="slds-text-title_bold slds-text-color_error">Mouse Gamer 16k DPI</h3>
+                        <p class="slds-var-m-top_xx-small">R$ 290,00</p>
+                        <p class="slds-text-color_weak slds-text-body_small">Estoque: 22 un</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="slds-var-m-vertical_medium" />
+
+            <h4 class="slds-text-heading_small slds-var-m-bottom_small slds-font-weight_bold">🛒 Módulo de Vendas (Checkout)</h4>
+            
+            <lightning-record-edit-form object-api-name="Item_Pedido__c" onsuccess={handleSucesso}>
+                <lightning-messages></lightning-messages>
+
+                <div class="slds-grid slds-gutters slds-wrap">
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-var-m-bottom_small">
+                        <lightning-input-field field-name="Pedido__c"></lightning-input-field>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_5-of-12 slds-var-m-bottom_small">
+                        <lightning-input-field field-name="Produto__c"></lightning-input-field>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-var-m-bottom_small">
+                        <lightning-input-field field-name="Quantidade__c"></lightning-input-field>
+                    </div>
+                </div>
+
+                <div class="slds-var-m-top_medium slds-align_absolute-center">
+                    <lightning-button label="Limpar Formulário" variant="neutral" type="reset" class="slds-var-m-right_small"></lightning-button>
+                    <lightning-button label="Confirmar Compra" variant="brand" type="submit"></lightning-button>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+
+        <div slot="footer" class="slds-text-align_center slds-text-color_weak slds-text-body_small">
+            © 2026 Andrade Tech Solutions - Sistema construído por Gleison para validação do Dev Senior Weslei.
+        </div>
+    </lightning-card>
 </template>
